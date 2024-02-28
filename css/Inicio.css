@@ -1,0 +1,21 @@
+.app-frame {
+    position: relative;
+    width: 80%;
+    height: 500px;
+    margin: 50px auto;
+    border: 4px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex; /* Hacer que el contenedor sea un contenedor flexible */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+    background-image: linear-gradient(to bottom, green, white, red); /* Agregar gradiente de colores */
+}
+
+
+.profile img {
+    border-radius: 50%; /* Hacer que el borde sea circular */
+    width: 150px; /* Ajustar el ancho de la imagen según sea necesario */
+    height: 150px; /* Ajustar la altura de la imagen según sea necesario */
+    object-fit: cover; /* Escalar la imagen para que llene el círculo */
+}
