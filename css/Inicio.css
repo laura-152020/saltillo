@@ -1,21 +1,263 @@
-.app-frame {
+*{
+    margin: 0;
+    padding: 0;
+    font-style: none;
+}
+.father_container {
     position: relative;
-    width: 80%;
-    height: 500px;
-    margin: 50px auto;
-    border: 4px solid #000;
-    border-radius: 20px;
+    width: 150vw; /* Ancho al 120% del viewport */
+    height: 150vh; /* Altura al 120% del viewport */
+    background: linear-gradient(to right, #00FF00 0%, rgba(255, 255, 255, 0.8) 50%, #FF0000 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    position: absolute;
+    top: 50px; /* Ajustado para dejar espacio */
+    right: 20px;
+    font-size: 2.5rem;
+    margin: 0;
+    font-family: 'Oleo Script', cursive;
+    font-weight: bold;
+    color: transparent; /* Texto transparente */
+    background-image: linear-gradient(to right, rgba(0, 255, 0, 1) 33%, rgba(255, 255, 255, 1) 66%, rgba(255, 0, 0, 1) 100%);
+    -webkit-background-clip: text; /* Clip al texto */
+    background-clip: text; /* Clip al texto */
+    text-fill-color: transparent; /* Texto transparente */
+    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.8); /* Contorno del texto */
+    z-index: 2; /* Asegura que esté por encima del fondo */
+}
+.image_container {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
-    display: flex; /* Hacer que el contenedor sea un contenedor flexible */
-    justify-content: center; /* Centrar horizontalmente el contenido */
-    align-items: center; /* Centrar verticalmente el contenido */
-    background-image: linear-gradient(to bottom, green, white, red); /* Agregar gradiente de colores */
+    border: 4px solid #000000;
+    z-index: 2; /* Asegura que esté por encima del fondo */
+    border-radius: 50%; /* Hace que el contenedor sea circular */
 }
 
-
-.profile img {
-    border-radius: 50%; /* Hacer que el borde sea circular */
-    width: 150px; /* Ajustar el ancho de la imagen según sea necesario */
-    height: 150px; /* Ajustar la altura de la imagen según sea necesario */
-    object-fit: cover; /* Escalar la imagen para que llene el círculo */
+.image_container img {
+    width: 120%; /* Ancho igual al contenedor */
+    height: 120%; /* Altura igual al contenedor */
+    object-fit: cover; /* Hace que la imagen llene el contenedor sin distorsionarse */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    margin-left: -10%; /* Ajuste para mover la imagen a la izquierda */
 }
+
+.search_container {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(#00FF00, #FFFFFF, #FF0000);
+    z-index: 2; /* Asegura que esté por encima del fondo */
+}
+
+.search_input {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    padding-left: 30px;
+    background-image: linear-gradient(to right, #00FF00, #FFFFFF, #FF0000);
+    border-radius: 5px;
+    color: #000;
+}
+
+.search_input::placeholder {
+    color: #000;
+    stroke: 6px rgba(0, 0, 0, 0.8);
+}
+
+.search_input_container {
+    position: relative;
+    width: 200px;
+}
+
+.search_icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+    fill: rgba(0, 0, 0, 1);
+    z-index: 2; /* Asegura que esté por encima del fondo */
+}
+
+.toggle_button {
+    position: absolute; /* Posiciona el botón de manera absoluta */
+    top: 150px; /* Ajusta la distancia desde la parte superior */
+    right: 30px; /* Ajusta la distancia desde la derecha */
+    border: none; /* Elimina el borde */
+    border-radius: 10px; /* Hace que el borde sea un poco circular */
+    padding: 10px; /* Ajusta el espacio dentro del botón */
+    background: linear-gradient(to right, #00FF00, #FFFFFF, #FF0000); /* Aplica un fondo degradado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    z-index: 3; /* Asegura que esté por encima del fondo */
+}
+
+.toggle_button svg {
+    width: 24px; /* Tamaño del icono */
+    height: 24px;
+    fill: rgb(0, 0, 0); /* Color del icono (blanco) */
+    transition: fill 0.3s; /* Agrega una transición para el cambio de color del icono */
+}
+
+.toggle_button:hover svg {
+    fill: rgba(0, 0, 0, 1); /* Cambia el color del icono al pasar el cursor sobre el botón (negro) */
+}
+.container {
+    display: flex; /* Utiliza flexbox para alinear los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+    background-image: linear-gradient(to right, #00FF00, #FFFFFF, #FF0000); /* Aplica un fondo degradado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Aplica un sombreado difuminado alrededor del contenedor */
+    position: relative; /* Asegura que los elementos hijos posicionados sean relativos a este contenedor */
+    overflow-x: hidden; /* Oculta el desplazamiento horizontal del contenedor principal */
+}
+
+.buttons_scroll_container {
+    overflow-x: auto; /* Agrega desplazamiento horizontal solo a los botones */
+    width: 100%; /* Asegura que el contenedor tenga un ancho definido */
+    white-space: nowrap; /* Evita que los elementos se envuelvan */
+}
+
+.buttons_container {
+    display: flex;
+    position: absolute;
+    top: 220px;
+    left: 25px;
+    white-space: nowrap; /* Evita que los botones se envuelvan a una nueva línea */
+}
+
+.button {
+    width: 100px;
+    height: 50px;
+    margin-right: 20px;
+    border: none;
+    background-image: linear-gradient(to right, #00FF00, #FFFFFF, #FF0000);
+    background-clip: padding-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    flex-shrink: 0; /* Evita que los botones se reduzcan cuando el espacio es insuficiente */
+}
+
+.buttons_scroll_container {
+    overflow-x: auto;
+    width: calc(100% - 50px); /* Ajusta el ancho para dejar espacio para los márgenes izquierdo y derecho */
+    margin: 0 auto; /* Centra el contenedor de botones horizontalmente */
+}
+
+.container_pastor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Ajuste de la altura del contenedor */
+    width: 300px; /* Ajuste del ancho del contenedor */
+    border-width: 6px; /* Ajuste del ancho del borde */
+    border-style: solid; /* Estilo del borde */
+    border-color: green white red; /* Colores del borde (verde, blanco, rojo) */
+    padding: 40px; /* Ajuste del relleno */
+    margin-left: -600px; /* Ajuste de la distancia a la izquierda */
+    margin-top: -600px; /* Ajuste de la distancia hacia arriba */
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+}
+
+.sub-box {
+    text-align: center;
+}
+
+img {
+    width: 200px; /* Ajuste del ancho de la imagen */
+    height: 200px; /* Ajuste de la altura de la imagen */
+    object-fit: contain; /* La imagen se ajustará para caber en el contenedor */
+    border-radius: 20px; /* Ajuste de la curvatura de los bordes */
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    margin: auto; /* Centra la imagen horizontalmente */
+    margin-top: -40px; /* Mueve la imagen hacia arriba */
+}
+
+.sub-box p {
+    font-size: 40px; /* Ajuste del tamaño del texto */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* Agrega un efecto de sombra al texto */
+}
+
+.container_pastor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Altura del contenedor */
+    width: 150px; /* Ancho del contenedor */
+    border-width: 3px; /* Ancho del borde */
+    border-style: solid; /* Estilo del borde */
+    border-color: green white red; /* Colores del borde (verde, blanco, rojo) */
+    padding: 20px;
+    margin-left: -300px; /* Ajuste de la distancia a la izquierda */
+    margin-top: -300px; /* Ajuste de la distancia hacia arriba */
+}
+.box {
+    width: 100%;
+    height: 100%;
+}
+.sub-box {
+    text-align: center;
+}
+img {
+    width: 100px; /* Ancho de la imagen */
+    height: 100px; /* Altura de la imagen */
+    object-fit: contain; /* La imagen se ajustará para caber en el contenedor */
+    border-radius: 10px; /* Hace que la imagen sea cuadrada con bordes redondeados */
+    margin-bottom: 10px;
+    display: block; /* Hace que la imagen se comporte como un bloque para que los márgenes funcionen correctamente */
+    margin: auto; /* Centra la imagen horizontalmente */
+    margin-top: -20px; /* Mueve la imagen hacia arriba */
+}
+
+.sub-box p {
+    font-size: 20px; /* Ajusta el tamaño del texto */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Agrega un efecto de contorno */
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+}
+
+.star-container {
+    margin-right: 30px; /* Ajuste para mover la estrella a la derecha */
+}
+
+.star {
+    font-size: 60px;
+    color: gold;
+}
+
+.calificacion-container {
+    margin-left: 90px; /* Espacio entre la estrella y la calificación */
+}
+
+.p_calificacion {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+

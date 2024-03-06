@@ -3,22 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Inicio</title>
+    <link href="../css/inicio.css"  type="text/css" rel="stylesheet" >
+    <script src="../js/inicio.js"></script>
 </head>
 <body>
-
-    <div class="app-frame"> <!-- Div para el marco -->
-        <div class="container">
-            <div class="profile">
-                <!-- Contenido del perfil aquí -->
-                <img src="../asssets/perfil.jpeg" alt="Perfil">
-            </div>
+    <div class="father_container">
+        <div class="child_container">
             <h1>SALTILLO</h1>
+            <div class="image_container">
+                <img src="../asssets/perfil.jpeg" alt="perfil">
+            </div>
         </div>
-    </div> <!-- Cierre del div para el marco -->
-    
-   
+        <div class="search_container">
+            <div class="search_input_container">
+                <input type="text" placeholder="Buscar..." class="search_input">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="search_icon">
+                    <path d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"/>
+                </svg>
+            </div>
+        </div>
+        <button class="toggle_button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+                <path d="M4 6h2v2H4zm0 5h2v2H4zm0 5h2v2H4zm16-8V6H8.023v2H18.8zM8 11h12v2H8zm0 5h12v2H8z"></path>
+            </svg>
+        </button>
+        <div class="father_container_2">
+            <!-- Contenido existente -->
+            <div class="buttons_scroll_container">
+                <div class="buttons_container">
+                    <!-- Botones aquí -->
+                    <button class="button"> Todos </button>
+                    <button class="button"> Tacos </button>
+                    <button class="button"> Sliders </button>
+                    <button class="button"> Tradicional </button>
+                    <!-- Repite botones según sea necesario -->
+                </div>
+            </div>
+        </div>
+      
 
+        <div class="container_pastor">
+            <div class="box">
+                <div class="sub-box">
+                    <img src="../asssets/tacos al pastor .jpg" alt="tacos pastor">
+                    <p> Tacos al pastor </p>
+                    <div class="stars">
+                        <span class="star">&#9733;</span>
+                        <p_calificacion> 5.0 </p_calificacion>
+                       <tiempo> 10 min </tiempo>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+
+
+    </div>
 </body>
 </html>
