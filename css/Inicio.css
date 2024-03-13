@@ -3,9 +3,12 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Noto Sans KR', sans-serif;
+	font-family: sans-serif;
 }
 
+body{
+    background:rgba(226, 226, 226, 0.822);
+}
 .profile {
     width: 80px; /* Reducir el ancho del contenedor del perfil */
     height: 80px; /* Reducir la altura del contenedor del perfil */
@@ -23,13 +26,13 @@
 }
 
 .title {
-    font-size: 2.5em; /* Tamaño del texto */
-    background: black; /* color fondo */
+    font-size: 3.0em; /* Tamaño del texto */
+    background: black;
 	-webkit-background-clip: text; /* Clip de fondo al texto para aplicar el degradado */
     color: transparent; /* Hacer el color del texto transparente */
     padding: 5px; /* Añadir espacio interno alrededor del texto */
     margin-top: 30px; /* Desplazar el título hacia abajo 10px */
-	margin-left: 170px; /* Margen a la izquierda */
+	margin-left: 130px; /* Margen a la izquierda */
 }
 .container .input{
 	border: 0;
@@ -43,7 +46,9 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-left: -95px; /* Ajustar el margen izquierdo a 0 para alinear a la izquierda */
+    margin-top: 30px; /* Desplazar el título hacia abajo 10px */
 }
+
 
 
 .search_wrap .search_box {
@@ -123,11 +128,10 @@
     cursor: pointer;
     display: inline-block; /* Alinea los botones horizontalmente */
 	margin-right: -0.9px;
-	margin-top: -30px; /* Ajustar la posición hacia arriba */
-
+	margin-top: 120px; /* Ajustar la posición hacia arriba */
+    margin: 30px auto; /* Centrar verticalmente y horizontalmente */
+    margin-top: -10px; /* Desplazar el título hacia abajo 10px */
 }
-
-
 .button:hover {
     background: #708bd2;
 }
@@ -135,5 +139,316 @@
 .button:focus {
     outline: none; /* Eliminar el contorno al enfocar */
 }
+.scrollbar {
+    width: 95%;
+    height: 10px; /* Altura de la barra deslizante */
+    background: linear-gradient(to right, green, white, red);
+    bottom: 0;
+    border-radius: 10px;
+    margin: 30px auto; /* Centrar verticalmente y horizontalmente */
+    border: 1px solid black;
+	margin-top: -20px; /* Ajustar la posición hacia arriba */
+}
 
 
+
+/*IMAGEN 0*/
+.image-container {
+    margin: 15px;
+	margin-left: 10px;
+}
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+img {
+    width: 160px;
+    height: 90px;
+    display: block;
+    cursor: pointer; /* Cambiar el cursor al pasar sobre la imagen */
+}
+.description {
+    text-align: center;
+    margin-left: 20px;
+}
+p {
+    margin-left: 70px;
+	margin-right: 10px;
+    text-align: right;
+}
+.rating {
+    font-size: 30px;
+    color: yellow;
+    margin-top: -35px;
+}
+
+
+/*IMAGEN_1*/
+.image1-container {
+    margin: 15px;
+    text-align: right; /* Alinear contenido a la derecha */
+    margin-left: 220px;
+    margin-top: -185px;
+}
+
+.image1-wrapper {
+    position: relative;
+    display: inline-block;
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 5px; /* Reducir el padding para hacerlo más pequeño */
+    margin-top: -5px;
+}
+
+img {
+    width: 100px; /* Reducir el ancho de la imagen */
+    height: 60px; /* Reducir la altura de la imagen */
+    display: block;
+    cursor: pointer; /* Cambiar el cursor al pasar sobre la imagen */
+}
+
+
+.description {
+    text-align: center; /* Alinear la descripción al centro */
+    margin-top: 10px; /* Ajustar el margen superior para separarla del borde */
+}
+
+p {
+    margin-left: auto; /* Mover a la derecha */
+    margin-right: 10px; /* Ajuste adicional hacia la derecha */
+    text-align: right;
+}
+
+.rating {
+    font-size: 20px; /* Reducir el tamaño de la fuente */
+    color: yellow;
+    margin-top: -25px; /* Ajustar la posición hacia arriba */
+    
+}
+
+
+/*IMAGEN_2*/
+.image2-container {
+    margin: 15px;
+    text-align: right; /* Alinear contenido a la derecha */
+    margin-top: 30px;
+	margin-right: 220px;
+	margin-left: 10px;
+}
+
+.image2-wrapper {
+    position: relative;
+    display: inline-block;
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+img {
+    width: 160px;
+    height: 90px;
+    display: block;
+    cursor: pointer; /* Cambiar el cursor al pasar sobre la imagen */
+}
+
+.description {
+    text-align: center;
+}
+
+p {
+    margin-left: auto; /* Mover a la derecha */
+    margin-right: 20px; /* Ajuste adicional hacia la derecha */
+    text-align: right;
+}
+
+.rating {
+    font-size: 30px;
+    color: yellow;
+    margin-top: -35px;
+	margin-right: 140px;
+}
+
+/*IMAGEN_3*/
+.image3-container {
+    margin: 15px;
+    text-align: right; /* Alinear contenido a la derecha */
+    margin-top: -190px;
+	margin-right: 160px;
+	margin-left: 210px;
+}
+
+.image3-wrapper {
+    position: relative;
+    display: inline-block;
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+img {
+    width: 160px;
+    height: 90px;
+    display: block;
+    cursor: pointer; /* Cambiar el cursor al pasar sobre la imagen */
+}
+
+.description {
+    text-align: center;
+}
+
+p {
+    margin-left: auto; /* Mover a la derecha */
+    margin-right: 20px; /* Ajuste adicional hacia la derecha */
+    text-align: right;
+}
+
+.rating {
+    font-size: 30px;
+    color: yellow;
+    margin-top: -35px;
+}
+
+.navigation {
+    position: relative;
+    width: auto; /* Cambiar el ancho a automático para adaptarse al contenido */
+    height: 70px;
+    background: linear-gradient(to right, #00FF00 0%, #00FF00 33.33%, #FFFFFF 44.44%, #FFFFFF 55.55%, rgb(255, 0, 0) 33.33%, rgb(255, 0, 0) 33.33%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 60px; /* Desplazar el título hacia abajo 10px */
+    margin-left: -40px; /* Ajustar el margen a la izquierda */
+    margin-right:-20px;
+}
+
+  
+  .navigation ul {
+    display: flex;
+    width: 350px;
+  }
+  
+  .navigation ul li {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    list-style: none;
+    z-index:1;
+  }
+  
+  .navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    flex-direction: column;
+    text-align :center;
+    font-weight: 500;
+    
+  }
+  .navigation ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 2.0em;
+    text-align: center;
+    color:black;
+    transition: 0.5s;
+    z-index: 1;
+  }
+  
+  .navigation ul li.active a .icon {
+    transform: translateY(-32px);
+  }
+  
+  
+  .navigation ul li a .text {
+    position: absolute;
+    color: #000000;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: .05em;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: .5s; /* Agregar transición para opacity y transform */
+  }
+  
+  
+  .navigation ul li a .circle {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    border: 1.8px solid linear-gradient(to right, #00FF00 0%, #00FF00 33.33%, #FFFFFF 33.33%, #FFFFFF 55.55%, #FF0000 55.55%, #FF0000 100%);;
+    z-index: 1;
+    transform: translateY(-37px) scale(0);
+  }
+  .navigation ul li.active a .circle {
+    transform: translateY(-37px) scale(1);
+  }
+  .indicator {
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(to right, #00FF00 0%, #00FF00 33.33%, #FFFFFF 33.33%, #FFFFFF 55.55%, #FF0000 55.55%, #FF0000 100%);
+    z-index: 0;
+    border: 6px solid linear-gradient(to right, #00FF00 0%, #00FF00 33.33%, #FFFFFF 33.33%, #FFFFFF 55.55%, #FF0000 55.55%, #FF0000 100%); /* Ajustar el color del borde a azul oscuro */
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+  }
+  
+  .indicator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%; /* Agregar una curva completa al indicador */
+    box-shadow: 1px -10px 0 linear-gradient(to right, #00FF00 0%, #00FF00 33.33%, #FFFFFF 33.33%, #FFFFFF 55.55%, #FF0000 55.55%, #FF0000 100%);
+}
+
+.indicator::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: calc(100% + 3px);
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%; /* Agregar una curva completa al indicador */
+    box-shadow: -1px -10px 0 linear-gradient(to right, #00FF00 0%, #00FF00 33.33%, #FFFFFF 33.33%, #FFFFFF 55.55%, #FF0000 55.55%, #FF0000 100%);
+}
+
+
+  .navigation ul li:nth-child(1).active ~ .indicator {
+    transform: translateX(calc(70px * 0)); /* Ajustar la posición del indicador para el primer elemento */
+  }
+  
+  .navigation ul li:nth-child(2).active ~ .indicator {
+    transform: translateX(calc(70px * 1)); /* Ajustar la posición del indicador para el segundo elemento */
+  }
+  
+  .navigation ul li:nth-child(3).active ~ .indicator {
+    transform: translateX(calc(70px * 2)); /* Ajustar la posición del indicador para el tercer elemento */
+  }
+  
+  .navigation ul li:nth-child(4).active ~ .indicator {
+    transform: translateX(calc(70px * 3)); /* Ajustar la posición del indicador para el cuarto elemento */
+  }
+  
+  .navigation ul li:nth-child(5).active ~ .indicator {
+    transform: translateX(calc(70px * 4)); /* Ajustar la posición del indicador para el quinto elemento */
+  }
