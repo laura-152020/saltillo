@@ -1,0 +1,206 @@
+body {
+    margin: 0; 
+    padding: 0;
+    background: rgba(215, 215, 215, 0.931);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre los botones */
+}
+
+.arrow-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px; /* Ajusta el relleno según sea necesario */
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre los botones */
+    margin-right:300px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end; /* Alineación a la derecha */
+    margin-top:-80px;
+    margin-right: 10px;
+}
+
+.arrow-button, .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px; /* Ajusta el relleno según sea necesario */
+}
+
+svg {
+    width: 50px; /* Tamaño del ícono */
+    height: 50px;
+    fill: rgba(0, 0, 0, 1); /* Color del ícono */
+}
+
+
+
+img {
+    width: 300px;
+    height: 200px;
+    display: block;
+    cursor: pointer; /* Cambiar el cursor al pasar sobre la imagen */
+    margin-left: 40px;
+
+}
+.description {
+    text-align: center;
+    margin-left: 20px;
+    padding: 5px; /* Añade relleno para que el texto no esté pegado al borde */
+    border-radius: 5px; /* Añade bordes redondeados */
+    font-weight: bold; /* Agrega negrita */
+}
+
+
+p1{
+    margin-left: 70px;
+	margin-right: 40px;
+    font-weight: bold; /* Agrega negrita */
+}
+.rating {
+    font-size: 30px;
+    color: yellow;
+    margin-top: -35px;
+    text-align: right;
+    margin-right: 310px;
+}
+p {
+    margin-left: 70px; 
+    margin-right: 40px; 
+    text-align: right; 
+    font-size: 16px; 
+    color:black; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    margin-top:-15px;
+}
+.additional-info {
+    margin-top: 0.2em; /* Aumenté un poco el espaciado superior */
+    font-size: .7em; /* Reduje el tamaño de la fuente */
+    font-style: italic; /* Estilo de fuente itálica */
+    color: #000000; /* Color del texto adicional */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 10px; /* Reduje el espacio interno */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total del elemento */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.wrapper {
+    height: 40px; /* Reduje la altura del contenedor */
+    min-height: 40px; /* Reduje la altura mínima del contenedor */
+    max-width: 140px; /* Establece un ancho máximo para el contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(221, 218, 218);
+    border-radius: 10px; /* Reduje el radio de borde */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduje la intensidad de la sombra */
+    margin-left: auto; /* Posiciona el contenedor a la derecha */
+    margin-right: 15px; /* Ajusta el margen derecho */
+    font-weight: bold; /* Aplica negrita al texto dentro del contenedor */
+}
+
+.wrapper span {
+    width: 100%;
+    text-align: center;
+    font-size: 16px; /* Reduje el tamaño de la fuente */
+    font-weight: 400; /* Reduje el peso de la fuente */
+    cursor:pointer;
+}
+
+.wrapper span.num {
+    font-size: 30px; /* Redujo el tamaño de la fuente */
+    border-right: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgb(0, 0, 0);
+    pointer-events: none;
+}
+.medidor {
+    width: 200px;
+    margin: 20px auto;
+    margin-left: 10px; /* Ajuste del margen izquierdo */
+    margin-top: -30px;
+    position: relative; /* Añadido para superponer la barra deslizante */
+}
+
+.slider {
+    width: 100%;
+    appearance: none; /* Quita los estilos por defecto del navegador */
+    height: 10px; /* Ajusta la altura de la barra deslizante */
+    background: linear-gradient(to right, #00843D, #FFFFFF, #CE1126); /* Colores de la bandera mexicana */
+    border-radius: 5px; /* Ajusta el radio de borde */
+    outline: none; /* Quita el contorno al hacer clic */
+    -webkit-appearance: none; /* Para navegadores webkit */
+    position: absolute; /* Coloca la barra deslizante sobre el medidor */
+    margin-top:-10px;
+    transform: translateY(-50%); /* Centra verticalmente la barra deslizante */
+}
+
+/* Estilo para el cursor */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Quita el estilo por defecto del cursor */
+    appearance: none; /* Quita el estilo por defecto del cursor */
+    width: 15px; /* Ancho del cursor */
+    height: 15px; /* Altura del cursor */
+    background: #000; /* Color del cursor */
+    border-radius: 50%; /* Ajusta el radio de borde para que sea circular */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el cursor */
+}
+
+.textos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.textos span {
+    flex: 1;
+    text-align: center;
+}
+.botones {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-precio {
+    margin-right: 60px; /* Espacio entre los botones */
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: linear-gradient(to right, #00FF00 0%, #FFFFFF 50%, #FF0000 100%);
+    color: #000000;
+    border: 2px solid #000000;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    margin-top: 70px; /* Desplazar el título hacia abajo 10px */
+}
+
+.btn-ordenar {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: linear-gradient(to right, #00FF00 0%, #FFFFFF 50%, #FF0000 100%);
+    color: #000000;
+    border: 2px solid #000000;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    margin-top: 70px; /* Desplazar el título hacia abajo 10px */
+}
+
+
+.btn-precio:hover, .btn-ordenar:hover {
+    opacity: 0.8; /* Cambia la opacidad al pasar el ratón */
+}
+
