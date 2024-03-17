@@ -1,3 +1,17 @@
+.arrow-container
+  .arrow-button
+    border: none
+    background-color: transparent
+    cursor: pointer
+    margin-top: 10px
+
+    svg
+      fill: rgba(0, 0, 0, 1)
+      width: 24px
+      height: 24px
+
+
+
 .search-container
   position: absolute
   top: 20px  // Ajusta la posición vertical hacia arriba
@@ -12,3 +26,73 @@
     fill: rgba(0, 0, 0, 1)
     width: 24px
     height: 24px
+
+
+.description-pastor
+  font-size: 18px  // Tamaño del texto
+  font-weight: bold  // Peso de la fuente
+  color: #333  // Color del texto
+  text-align: center  // Alineación del texto
+  margin-top: 20px  // Margen superior
+
+// Estilos para la imagen
+.image-wrapper-pastor
+  max-width: 90% // Ajustar el ancho máximo al 90% para que la imagen no ocupe todo el espacio disponible
+  height: auto // Ajustar la altura automáticamente para mantener la proporción
+  margin-top: 0 // Ajustar el margen superior según sea necesario
+  margin-left: auto // Alinear la imagen a la derecha
+  margin-right: 130px // Agregar margen derecho para separarla de otros elementos
+
+// Estilos para la descripción debajo de la imagen
+.description-pastor
+  font-weight: bold // Hacer el texto en negrita
+  margin-top: 10px // Ajustar el margen superior para separarla de la imagen
+  color: black // Color del texto
+
+// Estilos para la estrella de calificación
+.rating-pastor
+  font-size: 24px // Tamaño de la fuente de la estrella
+  color: yellow // Color de la estrella
+
+// Estilos para la calificación al lado de la estrella
+.rating-value-pastor
+  font-size: 16px // Tamaño de la fuente de la calificación
+  color: black // Color de la calificación
+
+// Estilos para el medidor de nivel de picante
+.medidor
+  margin-top: 20px // Ajustar el margen superior según sea necesario
+  .slider
+    width: 90% // Ancho completo
+    -webkit-appearance: none // Eliminar el estilo predeterminado del control deslizante en WebKit (Chrome, Safari, etc.)
+    appearance: none // Eliminar el estilo predeterminado del control deslizante
+    height: 5px // Altura del control deslizante
+    background: linear-gradient(to right, green, white, red) // Aplicar un degradado de colores mexicanos al control deslizante
+    outline: none // Eliminar el contorno
+    opacity: 0.7 // Opacidad del control deslizante cuando no está seleccionado
+    transition: opacity 0.2s // Agregar transición suave para la opacidad
+    &::-webkit-slider-thumb // Estilos para el pulgar del control deslizante en WebKit
+      -webkit-appearance: none // Eliminar el estilo predeterminado del pulgar en WebKit
+      appearance: none // Eliminar el estilo predeterminado del pulgar
+      width: 20px // Ancho del pulgar
+      height: 20px // Altura del pulgar
+      background: black // Color de fondo del pulgar
+      border-radius: 50% // Hacer el pulgar redondo
+      cursor: pointer // Mostrar un cursor de puntero al pasar sobre el pulgar
+      transition: background-color 0.2s // Agregar una transición suave para el color de fondo del pulgar
+
+// Estilos para los botones
+.botones
+  margin-top: 20px // Ajustar el margen superior según sea necesario
+  .btn-precio, .btn-ordenar
+    padding: 10px 20px // Ajustar el relleno del botón
+    font-size: 16px // Tamaño de la fuente del botón
+    color: #fff // Color del texto del botón
+    border: none // Eliminar el borde del botón
+    border-radius: 5px // Agregar un borde redondeado al botón
+    cursor: pointer // Mostrar un cursor de puntero al pasar sobre el botón
+  .btn-precio
+    background-color: green // Color de fondo del botón de precio
+    margin-right: 10px // Ajustar el margen derecho para separar los botones
+  .btn-ordenar
+    background-color: red // Color de fondo del botón de ordenar
