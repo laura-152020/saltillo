@@ -4,30 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="../css/inicio.css"   >
-    
+    <link rel="stylesheet" href="../sass/main.sass"   >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.0.1/css/ionicons.min.css">
+
 </head>
 <body>
-    <div class = tittle>
-        <h1 class="title">SALTILLO</h1>
-        <div class="profile">
-            <img src="../assets/perfil.jpeg" alt="Imagen de perfil" class="profile-img">
-        </div>
-    </div> 
-    <div class="search_wrap search_wrap_4">
-        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-        <div class="search_box">
-            <div class="btn btn_common">
-                <i class="fas fa-search"></i>
-            </div>
-            <input type="text" class="input" placeholder="search...">
-        </div>
-        <button class="toggle_button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
-                <path d="M4 6h2v2H4zm0 5h2v2H4zm0 5h2v2H4zm16-8V6H8.023v2H18.8zM8 11h12v2H8zm0 5h12v2H8z"></path>
-            </svg>
-        </button>
-    </div> 
+  <div class="container1">
+    <h1 class="title">SALTILLO</h1>
+    <div class="profile">
+        <img src="../assets/perfil.jpeg" alt="Imagen de perfil" class="profile-img">
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="search">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+       <input type="text" class="searchTerm" placeholder="What are you looking for?">
+       
+    </div>
+ </div>
     </div>
     <div class="button_container">
         <button class="button">Todo</button>
@@ -35,88 +32,107 @@
         <button class="button">Sliders</button>
         <button class="button">Tradicional</button>
     </div>
-    <div class="scrollbar"></div>
 </div>
-    <div class="image-container">
-        <div class="image-wrapper">
-            <img src="../assets/tacos al pastor .jpg" alt="pastor">
-            <div class="description">Tacos Al Pastor</div>
-            <p>5.0</p>
-            <div class="rating">&#9733;</div>
-            </div>
-    </div>
-    <div class="image1-container">
-        <div class="image1-wrapper">
-            <img src="../assets/canasta.jpeg" alt="canasta">
-            <div class="description">Tacos De canasta</div>
-            <p>4.0</p>
-            <div class="rating">&#9733;</div>
-            </div>
-    </div>
-    <div class="image2-container">
-        <div class="image2-wrapper">
-            <img src="../assets/dorados.jpeg" alt="dorados">
-            <div class="description">Tacos dorados</div>
-            <p>5.0</p>
-            <div class="rating">&#9733;</div>
-            </div>
-    </div>
-    <div class="image3-container">
-        <div class="image3-wrapper">
-            <img src="../assets/bistec.jpeg" alt="bistec">
-            <div class="description">Tacos De Bistec</div>
-            <p>5.0</p>
-            <div class="rating">&#9733;</div>
-            </div>
-    </div>
-     </div>
-     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <div class = "navigation">
-        <ul>
-          <li class="list active"> 
-            <a href="#">
-              <span class="icon"> <ion-icon name="home-outline"></ion-icon></span>
-              <span class="text">Home</span>
-              <span class="circle"> </span>
-            </a>
-          </li>
-           <li class="list"> 
-            <a href="#">
-              <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-              <span class="text">User</span>
-              <span class="circle"> </span>
-            </a>
-          </li>
-           <li class="list"> 
-            <a href="#">
-              <span class="icon"><ion-icon name="add-circle-outline"></ion-icon></span>
-              <span class="text">Add</span>
-              <span class="circle"> </span>
-            </a>
-          </li>
-           <li class="list"> 
-            <a href="#">
-              <span class="icon"><ion-icon name="chatbox-ellipses-outline"></ion-icon></span>
-              <span class="text">Chat </span>
-              <span class="circle"> </span>
-            </a>
-          </li>
-           <li class="list"> 
-            <a href="#">
-              <span class="icon"><ion-icon name="heart-outline"></ion-icon></span>
-              <span class="text"> Heart</span>
-              <span class="circle"> </span>
-            </a>
-          </li>
-          <div class="indicator"></div>
-        </ul>
-      </div>
+<div class="toggle_container">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="black">
+    <path d="M4 6h2v2H4zm0 5h2v2H4zm0 5h2v2H4zm16-8V6H8.023v2H18.8zM8 11h12v2H8zm0 5h12v2H8z"></path>
+  </svg>
+</div>
+
+  <div class="image-wrapper-pastor">
+    <img class="tacos-img" src="../assets/tacos al pastor.jpeg" alt="Tacos Al Pastor">
+    <div class="description-pastor" >
+      Tacos al pastor
+    </div>
+  </div>
+  <div class="rating-wrapper-pastor">
+    <div class="rating-pastor">&#9733;</div>
+    <p class="rating-value-pastor">5.0</p>
+  </div>
+
+
+  <div class="image-wrapper-dorados">
+    <img class="dorados-img" src="../assets/tacos dorados.jpeg" alt="Tacos Dorados">
+    <div class="description-dorados" >
+      Tacos Dorados
+    </div>
+  </div>
+  <div class="rating-wrapper-dorados">
+    <div class="rating-dorados">&#9733;</div>
+    <p class="rating-value-dorados">5.0</p>
+  </div>
+
+  <div class="image-wrapper-bistec">
+    <img class="bistec-img" src="../assets/tacos de bistec.jpeg" alt="Tacos De Bistec">
+    <div class="description-bistec" >
+      Tacos De Bistec
+    </div>
+  </div>
+  <div class="rating-wrapper-bistec">
+    <div class="rating-bistec">&#9733;</div>
+    <p class="rating-value-bistec">5.0</p>
+  </div>
+
+  <div class="image-wrapper-canasta">
+    <img class="canasta-img" src="../assets/tacos de canasta.jpeg" alt="Tacos De Canasta">
+    <div class="description-canasta" >
+      Tacos De Bistec
+    </div>
+  </div>
+  <div class="rating-wrapper-canasta">
+    <div class="rating-canasta">&#9733;</div>
+    <p class="rating-value-canasta">5.0</p>
+  </div>
+
+
+  <div class = "navigation">
+    <ul>
+      <li class="list active"> 
+        <a href="#">
+          <span class="icon"> <ion-icon name="home-outline"></ion-icon></span>
+          <span class="text">Home</span>
+          <span class="circle"> </span>
+        </a>
+      </li>
+       <li class="list"> 
+        <a href="#">
+          <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+          <span class="text">User</span>
+          <span class="circle"> </span>
+        </a>
+      </li>
+       <li class="list"> 
+        <a href="#">
+          <span class="icon"><ion-icon name="add-circle-outline"></ion-icon></span>
+          <span class="text">Add</span>
+          <span class="circle"> </span>
+        </a>
+      </li>
+       <li class="list"> 
+        <a href="#">
+          <span class="icon"><ion-icon name="chatbox-ellipses-outline"></ion-icon></span>
+          <span class="text">Chat </span>
+          <span class="circle"> </span>
+        </a>
+      </li>
+       <li class="list"> 
+        <a href="#">
+          <span class="icon"><ion-icon name="heart-outline"></ion-icon></span>
+          <span class="text"> Heart</span>
+          <span class="circle"> </span>
+        </a>
+      </li>
+      <div class="indicator"></div>
+    </ul>
+
+    
+    </div>
       
       
-      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <script src="../js/inicio.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
