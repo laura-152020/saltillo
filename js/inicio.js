@@ -9,15 +9,14 @@ imageTacosAlPastor.addEventListener('click', function() {
     window.location.href = 'tacos_al_pastor.html';
 });
 
-/*NAVEGADOR*/
-const list = document.querySelectorAll('.list');
 
-function activeLink() {
-  list.forEach((item) => 
-  item.classList.remove('active'));
-  this.classList.add('active');
-}
 
-list.forEach((item) =>
-item.addEventListener('click',activeLink));
+/* IMAGEN TACOS DORADOS CLICK*/
+// Obtener la imagen de "Tacos Dorados" por su clase o id
+const imageTacosDorados = document.querySelector('.dorados-img1');
 
+// Agregar un evento de clic a la imagen
+imageTacosDorados.addEventListener('click', function() {
+    // Redirigir a la página "tacos_al_pastor.html" al hacer clic en la imagen
+    window.location.href = 'tacos_dorados.html';
+});
