@@ -28,46 +28,58 @@
     height: 24px
 
 
-.description-pastor
-  font-size: 18px  // Tamaño del texto
-  font-weight: bold  // Peso de la fuente
-  color: #333  // Color del texto
-  text-align: center  // Alineación del texto
-  margin-top: 20px  // Margen superior
 
-// Estilos para la imagen
-.image-wrapper-pastor
-  max-width: 90% // Ajustar el ancho máximo al 90% para que la imagen no ocupe todo el espacio disponible
-  height: auto // Ajustar la altura automáticamente para mantener la proporción
-  margin-top: 0 // Ajustar el margen superior según sea necesario
-  margin-left: auto // Alinear la imagen a la derecha
-  margin-right: 130px // Agregar margen derecho para separarla de otros elementos
 
-// Estilos para la descripción debajo de la imagen
-.description-pastor
-  font-weight: bold // Hacer el texto en negrita
-  margin-top: 10px // Ajustar el margen superior para separarla de la imagen
-  color: black // Color del texto
+//IMAGEN TACOS AL PASTOR
 
-// Estilos para la estrella de calificación
-.rating-pastor
-  font-size: 24px // Tamaño de la fuente de la estrella
-  color: yellow // Color de la estrella
 
-// Estilos para la calificación al lado de la estrella
-.rating-value-pastor
-  font-size: 16px // Tamaño de la fuente de la calificación
-  color: black // Color de la calificación
+img.tacos-img1
+  width: 90% // Aumentado el valor de max-width para hacer la imagen más grande
+  height: 90% // Aumentado el valor de max-height para hacer la imagen más grande
+  margin-top: 5px 
+  margin-left: 15px 
+  
+.description-pastor1
+  color: black
+  font-weight: bold
+  margin-left: 10px // Mover la calificación más a la derecha
+
+
+.rating-pastor1
+  font-size: 25px // Aumentar el tamaño de la estrella
+  color: yellow
+  margin-left: 20px // Mover la estrella más a la derecha
+  margin-top: -5px // Ajustar para alinear la calificación con la estrella
+
+p.rating-value-pastor1
+  font-size: 20px // Aumentar el tamaño de la calificación
+  color: black
+  margin: 30px
+  margin-left: 55px // Mover la calificación más a la derecha
+  font-weight: bold
+  margin-top: -25px
+
+.time-pastor1
+  color: black
+  font-weight: bold
+  margin-left: 150px // Mover la calificación más a la derecha
+  margin-top: -50px
+
+.que_es_tacos_al_pastor
+  font-weight: bold // Establecer negrita
+  text-align: left // Alinear a la izquierda
 
 // Estilos para el medidor de nivel de picante
 .medidor
-  margin-top: 20px // Ajustar el margen superior según sea necesario
+  margin-top: 25px // Ajustar el margen superior según sea necesario
+
   .slider
-    width: 90% // Ancho completo
+    width:70% // Ancho completo
     -webkit-appearance: none // Eliminar el estilo predeterminado del control deslizante en WebKit (Chrome, Safari, etc.)
     appearance: none // Eliminar el estilo predeterminado del control deslizante
+    border: 1px solid black
     height: 5px // Altura del control deslizante
-    background: linear-gradient(to right, green, white, red) // Aplicar un degradado de colores mexicanos al control deslizante
+    background: linear-gradient(to right, #24FC02, #FFFFFF , #FC0A02) // Aplicar un degradado de colores mexicanos al control deslizante
     outline: none // Eliminar el contorno
     opacity: 0.7 // Opacidad del control deslizante cuando no está seleccionado
     transition: opacity 0.2s // Agregar transición suave para la opacidad
@@ -80,10 +92,50 @@
       border-radius: 50% // Hacer el pulgar redondo
       cursor: pointer // Mostrar un cursor de puntero al pasar sobre el pulgar
       transition: background-color 0.2s // Agregar una transición suave para el color de fondo del pulgar
+.suave
+  font-weight: bold
+  margin-right: 50px
+
+.medio
+  font-weight: bold
+  margin-right: 30px
+
+.picante
+  font-weight: bold
+
+.minus, .plus
+  display: inline-block
+  width: 20px
+  height: 20px
+  text-align: center
+  line-height: 20px
+  border: 1px solid black
+  cursor: pointer
+  background: linear-gradient(to right, green, white, red) /* Fondo degradado verde, blanco y rojo */
+  margin-top: 10px /* Ajusta el margen superior según sea necesario */
+  float: right /* Alinea a la derecha */
+
+.minus::after, .plus::after
+  content: ""
+  display: block
+  width: 10px
+  height: 2px
+  background-color: black
+  margin: 0 auto
+
+.num
+  margin: 0 5px
+  margin-top: 10px /* Ajusta el margen superior según sea necesario */
+  float: right /* Alinea a la derecha */
+
+
+
+
 
 // Estilos para los botones
 .botones
-  margin-top: 20px // Ajustar el margen superior según sea necesario
+  margin-top: 50px // Ajustar el margen superior según sea necesario
+
   .btn-precio, .btn-ordenar
     padding: 10px 20px // Ajustar el relleno del botón
     font-size: 16px // Tamaño de la fuente del botón
@@ -91,8 +143,17 @@
     border: none // Eliminar el borde del botón
     border-radius: 5px // Agregar un borde redondeado al botón
     cursor: pointer // Mostrar un cursor de puntero al pasar sobre el botón
+    margin-top: 50px
+
   .btn-precio
-    background-color: green // Color de fondo del botón de precio
-    margin-right: 10px // Ajustar el margen derecho para separar los botones
+    background: linear-gradient(to right, green, white, red)
+    margin-right: 50px // Ajustar el margen derecho para separar los botones
+    color:  black
+    font-weight: bold
+    border: 1px solid black
+
   .btn-ordenar
-    background-color: red // Color de fondo del botón de ordenar
+    background: linear-gradient(to right, green, white, red)
+    color:  black
+    font-weight: bold
+    border: 1px solid black

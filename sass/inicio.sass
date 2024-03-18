@@ -2,11 +2,6 @@
 
 
 
-.container1
-  display: flex  // Usa flexbox para centrar los elementos horizontalmente
-  justify-content: center  // Centra horizontalmente los elementos
-  align-items: center  // Centra verticalmente los elementos
-  flex-direction: column  // Coloca los elementos en columna
 
 .profile
   margin-top: -120px  // Ajusta el margen superior para que esté más arriba
@@ -18,13 +13,15 @@
   object-fit: cover  // Mantener la relación de aspecto de la imagen y cubrir el contenedor
   border-radius: 50%  // Hacer la imagen circular
   display: block  // Asegurar que la imagen se muestre como un bloque
-  margin-left: 55px
+  margin-left: 40px
+  margin-top: 50px  // Bajar la imagen
+
 .title
   color: black  // Color del texto negro
-  font-size: 3.0rem  // Tamaño de fuente más pequeño
+  font-size: 2.5rem  // Tamaño de fuente más pequeño
   text-align: right  // Alinear el texto a la derecha
-  margin-left: 190px  // Margen izquierdo
-  margin-top:65px  // Ajuste del margen superior para colocar el título más abajo
+  margin-left: 170px  // Margen izquierdo
+  margin-top: 50px  // Ajuste del margen superior para colocar el título más abajo
 
 .search
   width: 100%
@@ -110,264 +107,44 @@
   cursor: pointer
   box-shadow: none// Añade esta línea para eliminar cualquier sombra aplicada por defecto
 
-// IMAGEN 1
+
+
+//IMAGEN 1
 .image-wrapper-pastor
   max-width: 90% // Ajustado el valor de max-width para hacer la imagen más pequeña
   height: auto
   margin-top: 90px // Ajusta el margen superior para mover la imagen más arriba
-  margin-left: 20px
+  margin-left: 10px
+  margin-right: 10px
 
 .image-wrapper-pastor img.tacos-img
-  max-width: 50% // Ajustado el valor de max-width para hacer la imagen más pequeña
+  max-width: 80% // Ajustado el valor de max-width para hacer la imagen más pequeña
   height: auto
+  margin-left: 10px
+  margin-top: -30px
 
 .description-pastor
   color: black
   font-weight: bold
-  margin-left: -150px // Ajustado para mover el elemento más a la derecha
-  margin-top: 50px // Subir más el elemento
+  text-align: left // Alinear el texto a la izquierda
+  margin-left: 20px // Ajustar para alinear el texto a la izquierda
+  margin-right: 0 // Eliminar el margen derecho
 
 .rating-wrapper-pastor
   display: flex
   align-items: center
   justify-content: flex-start // Cambiado de flex-end a flex-start
   margin-top: -15px // Ajusta el valor según sea necesario
-  margin-left: 20px // Reducido el valor para mover más a la izquierda
+  margin-left: -15px // Reducido el valor para mover más a la izquierda 
 
-  .rating-pastor
-    font-size: 40px
-    color: yellow
+.rating-pastor
+  font-size: 25px // Aumentar el tamaño de la estrella
+  color: yellow
+  margin-left: 30px // Mover la estrella más a la derecha
+  margin-top: -10px // Ajustar para alinear la calificación con la estrella
 
-  p.rating-value-pastor
-    font-size: 14px
-    color: black
-    margin: 0
-    margin-left: 10px
-
-// IMAGEN 2
-.image-wrapper-dorados
-  max-width:50% /* Reduciendo aún más el tamaño de la imagen */
-  height: auto
-  margin-top: -220px /* Reduciendo el margen superior */
-  margin-left: 200px /* Reduciendo el margen izquierdo */
-
-.image-wrapper-dorados img.tacos-img
-  max-width: 50% /* Ajustando el tamaño de la imagen al máximo permitido por su contenedor */
-  height: auto
-
-.description-dorados
+p.rating-value-pastor
+  font-size: 20px // Aumentar el tamaño de la calificación
   color: black
-  font-weight: bold
-  margin-left: 18px // Ajustando el margen izquierdo
-  margin-top: 5px // Ajustando el margen superior para bajar el elemento
-
-.rating-wrapper-dorados
-  display: flex
-  align-items: center
-  justify-content: flex-start // Manteniendo el contenido a la izquierda
-  margin-top: -20px // Ajustando el margen superior para subir la imagen
-  margin-left: 195px // Reduciendo el margen izquierdo
- 
-  .rating-dorados
-    font-size: 40px /* Reduciendo el tamaño de la calificación */
-    color: yellow
-
-  p.rating-value-dorados
-    font-size: 12px /* Reduciendo el tamaño de la calificación */
-    color: black
-    margin: 0
-    margin-left: 5px /* Reduciendo el margen izquierdo */
-
-
-// IMAGEN 3
-.image-wrapper-bistec
-  max-width:50% /* Reduciendo aún más el tamaño de la imagen */
-  height: auto
-  margin-top: 5px /* Reduciendo el margen superior */
-  margin-left: 25px /* Reduciendo el margen izquierdo */
-
-.image-wrapper-bistec img.tacos-img
-  max-width: 50% /* Ajustando el tamaño de la imagen al máximo permitido por su contenedor */
-  height: auto
-
-.description-bistec
-  color: black
-  font-weight: bold
-  margin-left: 18px /* Ajustando el margen izquierdo */
-
-.rating-wrapper-bistec
-  display: flex
-  align-items: center
-  justify-content: flex-start // Manteniendo el contenido a la izquierda
-  margin-top: -20px // Ajustando el margen superior para subir la imagen
-  margin-left: 15px // Reduciendo el margen izquierdo
- 
-  .rating-bistec
-    font-size: 40px /* Reduciendo el tamaño de la calificación */
-    color: yellow
-
-  p.rating-value-bistec
-    font-size: 12px /* Reduciendo el tamaño de la calificación */
-    color: black
-    margin: 0
-    margin-left: 5px /* Reduciendo el margen izquierdo */
-
-
-// IMAGEN 4
-.image-wrapper-canasta
-  max-width: 50% /* Reduciendo aún más el tamaño de la imagen */
-  height: auto
-  margin-top: -200px /* Reduciendo el margen superior */
-  margin-left: auto /* Alinear a la derecha */
-  margin-right: -30px /* Añadir margen derecho para separar del borde */
-
-.image-wrapper-canasta img.tacos-img
-  max-width: 50% /* Ajustando el tamaño de la imagen al máximo permitido por su contenedor */
-  height: auto
-
-.description-canasta
-  color: black
-  font-weight: bold
-  margin-left: auto /* Alinear a la derecha */
-  margin-right: 18px /* Añadir margen derecho para separar del borde */
-
-.rating-wrapper-canasta
-  display: flex
-  align-items: center
-  justify-content: flex-end // Alinear el contenido a la derecha
-  margin-top: -20px /* Ajustando el margen superior para subir la imagen */
-  margin-left: auto /* Alinear a la derecha */
-  margin-right: 15px /* Añadir margen derecho para separar del borde */
- 
-  .rating-canasta
-    font-size: 40px /* Reduciendo el tamaño de la calificación */
-    color: yellow
-
-  p.rating-value-canasta
-    font-size: 12px /* Reduciendo el tamaño de la calificación */
-    color: black
-    margin: 0
-    margin-left: 5px /* Reduciendo el margen izquierdo */
-
-//NAVEGACION 
-
-
-.navigation 
-  position: relative
-  width: 400px
-  height: 70px
-  background: linear-gradient(45deg, #2196f3, #e91e63)
-  display: flex
-  justify-content: center
-  align-items: center
-  border-radius: 10px
-  margin-top: 70px /* Ajustar la distancia desde la parte superior */
-
-  ul 
-    display: flex
-    widht: 350px
-
-    li 
-      position: relative
-      width: 70px
-      height: 70px
-      list-style: none
-      z-inde: 1
-
-      a 
-        position: relative
-        display: flex
-        justify-content: center /* Centrar verticalmente */
-        align-items: center /* Centrar horizontalmente */
-        flex-direction: column
-        text-align: center
-        font-weight: 500
-        
-        .icon 
-          position: relative
-          display: block
-          line-height: 75px
-          font-size: 1.5em
-          text-align: center
-          color: #fff
-          transition: 0.5s
-          z-index: 1
-
-        &.active .icon 
-          transform: translateY(-32px)
-
-        .text 
-          position: absolute
-          color: #fff
-          font-weight: 400
-          font-size: 0.75em
-          letter-spacing: .05em
-          opacity: 0
-          transform: translateY(20px)
-          transition: .5s /* Agregar transición para opacity y transform */
-
-        .circle 
-          position: absolute
-          display: block
-          width: 50px
-          height: 50px
-          background: transparent
-          border-radius: 50%
-          border: 1.8px solid #fff
-          z-index: 1
-          transform: translateY(-37px) scale(0)
-
-        &.active .circle 
-          transform: translateY(-37px) scale(1)
-
-  .indicator 
-    position: absolute
-    top: -50%
-    width: 70px
-    height: 70px
-    background: linear-gradient(45deg, #2196f3, #e91e63)
-    z-index: 0
-    border: 6px solid #060621 /* Ajustar el color del borde a azul oscuro */
-    border-radius: 50%
-    display: flex
-    justify-content: center
-    align-items: center
-    transition: .5s
-
-    &::before 
-      content: ''
-      position: absolute
-      top: 50%
-      left: -22px
-      width: 20px /* Corregir la propiedad 'widht' a 'width' */
-      height: 20px
-      background: transparent
-      border-top-right-radius: 20px
-      box-shadow: 1px -10px 0 linear-gradient(45deg, #2196f3, #e91e63)
-
-    &::after 
-      content: ''
-      position: absolute
-      top: 40px
-      left: calc(100% + 3px) /* Ajustar la posición hacia la derecha */
-      transform: translateY(-50%)
-      width: 20px
-      height: 20px
-      background: transparent
-      border-top-left-radius: 20px
-      box-shadow: -1px -10px 0 linear-gradient(45deg, #2196f3, #e91e63)
-
-  ul li:nth-child(1).active ~ .indicator 
-    transform: translateX(calc(70px * 0)) /* Ajustar la posición del indicador para el primer elemento */
-
-  ul li:nth-child(2).active ~ .indicator 
-    transform: translateX(calc(70px * 1)) /* Ajustar la posición del indicador para el segundo elemento */
-
-  ul li:nth-child(3).active ~ .indicator 
-    transform: translateX(calc(70px * 2)) /* Ajustar la posición del indicador para el tercer elemento */
-
-  ul li:nth-child(4).active ~ .indicator 
-    transform: translateX(calc(70px * 3)) /* Ajustar la posición del indicador para el cuarto elemento */
-
-  ul li:nth-child(5).active ~ .indicator 
-    transform: translateX(calc(70px * 4)) /* Ajustar la posición del indicador para el quinto elemento */
+  margin: 20px
+  margin-left: 20px // Mover la calificación más a la derecha
