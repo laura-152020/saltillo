@@ -1,5 +1,6 @@
-.arrow-container
-  .arrow-button
+//REVERSA
+.arrow2-container
+  .arrow2-button
     border: none
     background-color: transparent
     cursor: pointer
@@ -11,13 +12,13 @@
       height: 24px
 
 
-
-.search-container
+//BUSCADOR
+.search2-container
   position: absolute
   top: 20px  // Ajusta la posición vertical hacia arriba
   right: 20px  // Ajusta la posición horizontal hacia la derecha
 
-.search-button
+.search2-button
   border: none
   background-color: transparent
   cursor: pointer
@@ -30,28 +31,26 @@
 
 
 
-//IMAGEN TACOS AL PASTOR
-
-
-img.tacos-img1
+//IMAGEN TACOS DE BISTEC
+img.bistec-img2
   width: 90% // Aumentado el valor de max-width para hacer la imagen más grande
   height: 90% // Aumentado el valor de max-height para hacer la imagen más grande
   margin-top: 5px 
   margin-left: 15px 
   
-.description-pastor1
+.description-bistec2
   color: black
   font-weight: bold
-  margin-left: 10px // Mover la calificación más a la derecha
+  margin-left: 15px // Mover la calificación más a la derecha
 
 
-.rating-pastor1
+.rating-bistec2
   font-size: 25px // Aumentar el tamaño de la estrella
   color: yellow
   margin-left: 20px // Mover la estrella más a la derecha
   margin-top: -5px // Ajustar para alinear la calificación con la estrella
 
-p.rating-value-pastor1
+p.rating-value-bistec2
   font-size: 20px // Aumentar el tamaño de la calificación
   color: black
   margin: 30px
@@ -59,52 +58,61 @@ p.rating-value-pastor1
   font-weight: bold
   margin-top: -25px
 
-.time-pastor1
+.time-bistec2
   color: black
   font-weight: bold
   margin-left: 150px // Mover la calificación más a la derecha
   margin-top: -50px
 
-.que_es_tacos_al_pastor
+.que_son_los_tacos_de_bistec
   font-weight: bold // Establecer negrita
   text-align: left // Alinear a la izquierda
 
-// Estilos para el medidor de nivel de picante
-.medidor
-  margin-top: 25px // Ajustar el margen superior según sea necesario
+//MEDIDOR PICANTE
+.medidor_bistec2
+  margin-top: -20px // Ajustar el margen superior según sea necesario
 
-  .slider
-    width:70% // Ancho completo
-    -webkit-appearance: none // Eliminar el estilo predeterminado del control deslizante en WebKit (Chrome, Safari, etc.)
-    appearance: none // Eliminar el estilo predeterminado del control deslizante
-    border: 1px solid black
-    height: 5px // Altura del control deslizante
-    background: linear-gradient(to right, #24FC02, #FFFFFF , #FC0A02) // Aplicar un degradado de colores mexicanos al control deslizante
-    outline: none // Eliminar el contorno
-    opacity: 0.7 // Opacidad del control deslizante cuando no está seleccionado
-    transition: opacity 0.2s // Agregar transición suave para la opacidad
-    &::-webkit-slider-thumb // Estilos para el pulgar del control deslizante en WebKit
-      -webkit-appearance: none // Eliminar el estilo predeterminado del pulgar en WebKit
-      appearance: none // Eliminar el estilo predeterminado del pulgar
-      width: 20px // Ancho del pulgar
-      height: 20px // Altura del pulgar
-      background: black // Color de fondo del pulgar
-      border-radius: 50% // Hacer el pulgar redondo
-      cursor: pointer // Mostrar un cursor de puntero al pasar sobre el pulgar
-      transition: background-color 0.2s // Agregar una transición suave para el color de fondo del pulgar
-.suave
+.slider
+  width: 70% // Ancho completo
+  height: 5px // Altura del control deslizante
+  -webkit-appearance: none // Eliminar el estilo predeterminado del control deslizante en WebKit (Chrome, Safari, etc.)
+  appearance: none // Eliminar el estilo predeterminado del control deslizante
+  border: 1px solid black
+  background: linear-gradient(to right, #24FC02, #FFFFFF, #FC0A02) // Aplicar un degradado de colores mexicanos al control deslizante
+  outline: none // Eliminar el contorno
+  opacity: 0.7 // Opacidad del control deslizante cuando no está seleccionado
+  transition: opacity 0.2s // Agregar transición suave para la opacidad
+
+  &::-webkit-slider-thumb
+    -webkit-appearance: none // Eliminar el estilo predeterminado del pulgar en WebKit
+    appearance: none // Eliminar el estilo predeterminado del pulgar
+    width: 20px // Ancho del pulgar
+    height: 20px // Altura del pulgar
+    background: black // Color de fondo del pulgar
+    border-radius: 50% // Hacer el pulgar redondo
+    cursor: pointer // Mostrar un cursor de puntero al pasar sobre el pulgar
+    transition: background-color 0.2s // Agregar una transición suave para el color de fondo del pulgar
+
+
+.suave2
+  font-weight: bold
+  margin-right: 70px
+
+.medio2
   font-weight: bold
   margin-right: 50px
 
-.medio
-  font-weight: bold
-  margin-right: 30px
-
-.picante
+.picante2
   font-weight: bold
 
 
-  
+
+  // Estilos para el contador de tacos
+.minus2,
+.plus2
+  cursor: pointer
+  font-size: 24px
+
 .minus, .plus
   display: inline-block
   width: 20px
@@ -114,10 +122,9 @@ p.rating-value-pastor1
   border: 1px solid black
   cursor: pointer
   background: linear-gradient(to right, green, white, red) /* Fondo degradado verde, blanco y rojo */
-  margin-top: 10px /* Ajusta el margen superior según sea necesario */
+  margin-top: -20px /* Ajusta el margen superior según sea necesario */
   float: right /* Alinea a la derecha */
-  font-weight: bold
-  margin-right: 20px /* Ajusta el margen derecho según sea necesario */
+ 
 
 .minus::after, .plus::after
   content: ""
@@ -129,20 +136,18 @@ p.rating-value-pastor1
 
 .num
   margin: 0 5px
-  margin-top: 10px /* Ajusta el margen superior según sea necesario */
+  margin-top: -15px /* Ajusta el margen superior según sea necesario */
   float: right /* Alinea a la derecha */
-  margin-right: 20px /* Ajusta el margen derecho según sea necesario */
-
 
 
 
 
 
 // Estilos para los botones
-.botones
+.botones_bistec2
   margin-top: 50px // Ajustar el margen superior según sea necesario
 
-  .btn-precio, .btn-ordenar
+  .btn-precio-bistec2, .btn-ordenar-bistec2
     padding: 10px 20px // Ajustar el relleno del botón
     font-size: 16px // Tamaño de la fuente del botón
     color: #fff // Color del texto del botón
@@ -151,14 +156,14 @@ p.rating-value-pastor1
     cursor: pointer // Mostrar un cursor de puntero al pasar sobre el botón
     margin-top: 50px
 
-  .btn-precio
+  .btn-precio-bistec2
     background: linear-gradient(to right, green, white, red)
-    margin-right: 50px // Ajustar el margen derecho para separar los botones
+    margin-right: 85px // Ajustar el margen derecho para separar los botones
     color:  black
     font-weight: bold
     border: 1px solid black
 
-  .btn-ordenar
+  .btn-ordenar-bistec2
     background: linear-gradient(to right, green, white, red)
     color:  black
     font-weight: bold
