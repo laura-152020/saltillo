@@ -67,3 +67,7 @@ slider.addEventListener('input', function() {
 // Establecer el medidor al valor inicial
 setMedidor(slider.value);
 
+// Función para redireccionar a la página de ingredientes
+function redirectToIngredients() {
+    window.location.href = 'ingredientes.html'; // Redirigir a ingredientes.html
+  }

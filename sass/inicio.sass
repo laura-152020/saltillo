@@ -89,188 +89,322 @@
     fill: black// Color verde para la bandera de México
     width: 24px // Ajustar el ancho del ícono
     height: 24px // Ajustar la altura del ícono
-
-//botones
+//BUTTON
 .button_container
-  display: flex
-  gap: 10px
-  justify-content: center
-  overflow-x: auto  // Habilita la barra de desplazamiento horizontal cuando el contenido excede el contenedor
-  margin-top: 80px  // Aumenta el margen superior a 40px para colocar los botones más abajo
+  overflow-x: auto /* Habilitar la barra de desplazamiento horizontal si es necesario */
+  white-space: nowrap /* Evitar que los botones se envuelvan a una nueva línea */
+  margin-top: 80px
+  margin-left: 50px
+
+.button_wrapper
+  display: inline-block /* Permite que el contenedor de botones se ajuste automáticamente al tamaño de su contenido */
 
 .button
-  padding: 5px 10px  // Reducir el espacio interno de los botones
-  font-size: 0.8em  // Reducir el tamaño de la fuente de los botones
+  padding: 5px 10px
+  font-size: 0.8em
   background-color: #ccc
   border: none
   border-radius: 10px
   cursor: pointer
-  box-shadow: none// Añade esta línea para eliminar cualquier sombra aplicada por defecto
+  margin-right: 10px /* Agregamos un margen derecho para separar los botones */
 
+.image-wrapper-pastor1
+  max-width: 90%
+  height: auto
+  margin-top: 10px
+  margin-left: 10px
+  margin-right: 10px
 
-//IMAGEN 0
-.image-wrapper-pastor
+.image-container-pastor1
+  margin-top: -150px // Ajusta el margen superior para mover más hacia abajo la imagen de los "Tacos al Pastor"
+
+.image-wrapper-pastor1 img.tacos-img1
+  max-width: 80%
+  height: auto
+  margin-left: 10px
+
+.description-pastor1
+  color: black
+  font-weight: bold
+  text-align: left
+  margin-left: 20px
+  margin-right: 0
+
+.rating-wrapper-pastor1
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin-top: 5px
+  margin-left: 10px
+
+.rating-pastor1
+  font-size: 25px
+  color: yellow
+  margin-left: -5px
+  margin-top: -20px
+
+p.rating-value-pastor1
+  font-size: 20px
+  color: black
+  margin: 20px
+  margin-left: 20px
+  margin-top: 10px
+
+//IMAGEN2
+.image-wrapper-dorados1
+  max-width: 90%
+  height: auto
+  margin-top: -205px
+  margin-left: 210px
+  margin-right: 10px
+
+.image-wrapper-dorados1 img.tacos-img1
+  max-width: 80%
+  height: auto
+  margin-left: 10px
+  margin-top: 30px // Ajusta el margen superior para mover los "Tacos Dorados" hacia abajo
+
+.description-dorados1
+  color: black
+  font-weight: bold
+  text-align: left
+  margin-left: 15px
+  margin-right: 0
+  width: 200px
+  white-space: nowrap
+  overflow: hidden
+  margin-top: 5px // Ajusta el margen superior para mover la descripción hacia abajo
+
+.rating-wrapper-dorados1
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  margin-top: 20px // Ajusta el margen superior para mover la calificación hacia abajo
+  margin-left: 10px
+
+.rating-dorados1
+  font-size: 25px
+  color: yellow
+  margin-left: 210px
+  margin-top: 0 // Ajusta el margen superior para mover la calificación hacia abajo
+
+p.rating-value-dorados1
+  font-size: 20px
+  color: black
+  margin: 20px
+  margin-left: 250px
+  margin-top: -30px // Ajusta el margen superior para mover la calificación hacia abajo
+
+//IMAGEN 2
+.image-wrapper-bistec1
   max-width: 90% // Ajustado el valor de max-width para hacer la imagen más pequeña
   height: auto
   margin-top: 90px // Ajusta el margen superior para mover la imagen más arriba
   margin-left: 10px
   margin-right: 10px
 
-.image-wrapper-pastor img.tacos-img
+.image-wrapper-bistec1 img.bistec1-img
   max-width: 80% // Ajustado el valor de max-width para hacer la imagen más pequeña
   height: auto
   margin-left: 10px
   margin-top: -30px
 
-.description-pastor
+.description-bistec1
   color: black
   font-weight: bold
   text-align: left // Alinear el texto a la izquierda
-  margin-left: 20px // Ajustar para alinear el texto a la izquierda
+  margin-left: 10px // Ajustar para alinear el texto a la izquierda
   margin-right: 0 // Eliminar el margen derecho
 
-.rating-wrapper-pastor
+.rating-wrapper-bistec1
   display: flex
   align-items: center
   justify-content: flex-start // Cambiado de flex-end a flex-start
   margin-top: -15px // Ajusta el valor según sea necesario
-  margin-left: -15px // Reducido el valor para mover más a la izquierda 
+  margin-left: -30px // Reducido el valor para mover más a la izquierda 
 
-.rating-pastor
+.rating-bistec1
   font-size: 25px // Aumentar el tamaño de la estrella
   color: yellow
   margin-left: 40px // Mover la estrella más a la derecha
   margin-top: -15px // Ajustar para alinear la calificación con la estrella
 
-p.rating-value-pastor
+p.rating-value-bistec1
   font-size: 20px // Aumentar el tamaño de la calificación
   color: black // Cambiado a negro
   margin: 20px
-  margin-left: 20px // Mover la calificación más a la derecha
-  margin-top: 10px
-
-
-//IMAGEN 1
-.image-wrapper-dorados1
-  max-width: 80% // Ajustado el valor de max-width para hacer la imagen más pequeña
-  height: auto
-  margin-left: auto // Establecer el margen izquierdo automático para mover la imagen a la derecha
-  margin-right: -110px // Ajustar el margen derecho según sea necesario
-  margin-top: -175px
-
-
-.image-wrapper-dorados1 img.dorados-img1
-  max-width: 80% // Ajustado el valor de max-width para hacer la imagen más pequeña
-  height: auto
-  margin-left: 10px
+  margin-left: -50px // Mover la calificación más a la derecha
   margin-top: -30px
 
-.description-dorados1
-  color: black
-  font-weight: bold
-  text-align: left // Alinear el texto a la izquierda
-  margin-left: 20px // Ajustar para alinear el texto a la izquierda
-  margin-right: 0 // Eliminar el margen derecho
 
-.rating-wrapper-dorados1
-  display: flex
-  align-items: center
-  justify-content: flex-start // Cambiado de flex-end a flex-start
-  margin-top: -15px // Ajusta el valor según sea necesario
-  margin-left: -15px // Reducido el valor para mover más a la izquierda 
-
-.rating-dorados1
-  font-size: 25px // Aumentar el tamaño de la estrella
-  color: yellow
-  margin-left: 200px // Mover la estrella más a la derecha
-  margin-top: -10px // Ajustar para alinear la calificación con la estrella
-
-p.rating-value-dorados1
-  font-size: 20px // Aumentar el tamaño de la calificación
-  color: black
-  margin-top: -30px
-  margin-left: 150px // Mover la calificación más a la derecha
-
-
-//IMAGEN 2
-
-.image-wrapper-bistec2
-  max-width: 80% // Ajustado el valor de max-width para hacer la imagen más pequeña
-  height: auto
-  margin-left: 10px // Establecer el margen izquierdo automático para mover la imagen a la derecha
-  margin-right: -110px // Ajustar el margen derecho según sea necesario
-  margin-top: 60px
-
-.image-wrapper-bistec2 img.bistec-img2
-  max-width: 80% // Ajustado el valor de max-width para hacer la imagen más pequeña
-  height: auto
-  margin-left: 10px
-  margin-top: -30px
-
-.description-bistec2
-  color: black
-  font-weight: bold
-  text-align: left // Alinear el texto a la izquierda
-  margin-left: 20px // Ajustar para alinear el texto a la izquierda
-  margin-right: 0 // Eliminar el margen derecho
-
-.rating-wrapper-bistec2
-  display: flex
-  align-items: center
-  justify-content: flex-start // Cambiado de flex-end a flex-start
-  margin-top: -15px // Ajusta el valor según sea necesario
-  margin-left: 5px // Reducido el valor para mover más a la izquierda 
-
-.rating-bistec2
-  font-size: 25px // Aumentar el tamaño de la estrella
-  color: yellow
-  margin-left: 20px // Mover la estrella más a la derecha
-  margin-top: -10px // Ajustar para alinear la calificación con la estrella
-
-p.rating-value-bistec2
-  font-size: 20px // Aumentar el tamaño de la calificación
-  color: black
-  margin-top: -30px
-  margin-left: -180px // Mover la calificación más a la derecha
 
 
 //IMAGEN 3
-.image-wrapper-canasta3
+.image-wrapper-canasta1
   max-width: 80% // Ajustado el valor de max-width para hacer la imagen más pequeña
   height: auto
-  margin-left: auto // Establecer el margen izquierdo automático para mover la imagen a la derecha
+  margin-left: 200px // Establecer el margen izquierdo automático para mover la imagen a la derecha
   margin-right: -110px // Ajustar el margen derecho según sea necesario
-  margin-top: -175px
+  margin-top: -200px
 
 
-.image-wrapper-canasta3 img.canasta-img3
+.img.canasta1-img
   max-width: 80% // Ajustado el valor de max-width para hacer la imagen más pequeña
   height: auto
-  margin-left: 10px
-  margin-top: -40px
+  margin-left: 110px
+  margin-top: -200px
 
-.description-canasta3
+.description-canasta1
   color: black
   font-weight: bold
   text-align: left // Alinear el texto a la izquierda
   margin-left: 15px // Ajustar para alinear el texto a la izquierda
   margin-right: 0 // Eliminar el margen derecho
 
-.rating-wrapper-canasta3
+.rating-wrapper-canasta1
   display: flex
   align-items: center
   justify-content: flex-start // Cambiado de flex-end a flex-start
   margin-top: -15px // Ajusta el valor según sea necesario
   margin-left: 5px // Reducido el valor para mover más a la izquierda 
 
-.rating-canasta3
+.rating-canasta1
   font-size: 25px // Aumentar el tamaño de la estrella
   color: yellow
   margin-left: 200px // Mover la estrella más a la derecha
   margin-top: -10px // Ajustar para alinear la calificación con la estrella
 
-p.rating-value-canasta3
+p.rating-value-canasta1
   font-size: 20px // Aumentar el tamaño de la calificación
   color: black
   margin-top: -30px
-  margin-left: 165px // Mover la calificación más a la derecha
+  margin-left:230px // Mover la calificación más a la derecha
+
+//NAVIGATION
+.navigation 
+  position: relative
+  width: 400px
+  height: 70px
+  margin-left: 10px
+  background: linear-gradient(to right, rgba(0, 255, 0, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%)
+
+  border: 1px solid black
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 10px
+  margin-top: 70px /* Ajustar la distancia desde la parte superior */
+
+.navigation ul 
+  display: flex
+  widht: 350px
+
+.navigation ul li 
+  position: relative
+  width: 70px
+  height: 70px
+  list-style: none
+  z-indez:1
+
+.navigation ul li a 
+  position: relative
+  display: flex
+  justify-content: center /* Centrar verticalmente */
+  align-items: center /* Centrar horizontalmente */
+  flex-direction: column
+  text-align :center
+  font-weight: 500
+  
+.navigation ul li a .icon 
+  position: relative
+  display: block
+  line-height: 75px
+  font-size: 1.5em
+  text-align: center
+  color: black
+  transition: 0.5s
+  z-index: 1
+
+.navigation ul li.active a .icon 
+  transform: translateY(-32px)
+
+
+.navigation ul li a .text 
+  position: absolute
+  color: black
+  font-weight: 400
+  font-size: 0.75em
+  letter-spacing: .05em
+  opacity: 0
+  transform: translateY(20px)
+  transition: .5s /* Agregar transición para opacity y transform */
+
+
+.navigation ul li a .circle 
+  position: absolute
+  display: block
+  width: 50px
+  height: 50px
+  background: transparent
+  border-radius: 50%
+  font-weight: bold
+  border: 1.8px solid black
+  z-index: 1
+  transform: translateY(-35px) scale(0)
+
+.navigation ul li.active a .circle 
+  transform: translateY(-35px) scale(1)
+
+
+.indicator 
+  position: absolute
+  top: -50%
+  width: 70px
+  height: 70px
+  background: linear-gradient(to right, rgba(0, 255, 0, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%)
+  border: 1px solid black /* Ajustar el color del borde a azul oscuro */
+  z-index: 0
+  border: 3px solid black
+  border-radius: 50%
+  display:flex
+  justify-content: center
+  align-items: center
+  transition: .5s
+
+.indicator::before 
+  content: ''
+  position: absolute
+  top:50%
+  left:-22px
+  width: 20px /* Corregir la propiedad 'widht' a 'width' */
+  height: 20px
+  background: transparent
+  border-top-right-radius: 20px
+  box-shadow: 1px -10px 0 linear-gradient(45deg, #2196f3, #e91e63)
+
+.indicator::after 
+  content: ''
+  position: absolute
+  top: 40px
+  left: calc(100% + 3px) /* Ajustar la posición hacia la derecha */
+  transform: translateY(-50%)
+  width: 20px
+  height: 20px
+  background: transparent
+  border-top-left-radius: 20px
+  box-shadow: -1px -10px 0 linear-gradient(45deg, #2196f3, #e91e63) 
+
+.navigation ul li:nth-child(1).active ~ .indicator 
+  transform: translateX(calc(70px * 0)) /* Ajustar la posición del indicador para el primer elemento */
+
+.navigation ul li:nth-child(2).active ~ .indicator 
+  transform: translateX(calc(70px * 1)) /* Ajustar la posición del indicador para el segundo elemento */
+
+.navigation ul li:nth-child(3).active ~ .indicator 
+  transform: translateX(calc(70px * 2)) /* Ajustar la posición del indicador para el tercer elemento */
+
+.navigation ul li:nth-child(4).active ~ .indicator 
+  transform: translateX(calc(70px * 3)) /* Ajustar la posición del indicador para el cuarto elemento */
+
+.navigation ul li:nth-child(5).active ~ .indicator 
+  transform: translateX(calc(70px * 4)) /* Ajustar la posición del indicador para el quinto elemento */
